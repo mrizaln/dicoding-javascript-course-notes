@@ -1,0 +1,34 @@
+parameter:
+    javascript don't check the number of argument passed into a function,
+    thus, we can input any number of arguments into it.
+    if the number of argument is less than the number of parameter, the other parameter will,
+    be undefined.
+        ```
+        function greet(a, b, c) {
+            console.log(a, b, c);
+        }
+
+        greet("a", "b");    // is valid
+        ```
+
+
+rest parameter:
+    represented as ... (three consecutive dots)
+    the inverse of spread operator
+
+
+arrow function:
+    not so different from regular function
+    using => symbol on its declaration
+        ```
+        const sayName = (name) => {
+            console.log(`My name is ${name});
+        }
+        ```
+    similar to lambda
+
+
+closure:
+    function but can be instantiated
+    variable inside an instantiated closure is similar to static variable inside a function (C++)
+        but independent from other instantiated function

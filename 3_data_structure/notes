@@ -1,0 +1,80 @@
+object:
+    something like object in python3? (boilerplate object?)
+    object contains key-value pair
+    can contain multiple key-value pair separated by comma
+    use dot (.) operator to access key or bracket operator
+    key must be a string
+         ```
+         const user = {
+             firstName: "Luke",
+             lastName: "Skywalker",
+             age: 19,
+             isJedi: true,
+         }; 
+
+         let aJedi = user.isJedi;
+         let name  = user["firstName"];
+         ```
+    properties inside a const object can be modified (in a way, object is mutable)
+    properties can be deleted (using delete keyword)
+
+    [[ in a nutshell, an object is just like a fancy std::map in cpp ]]
+
+
+array:
+    if we access an array outside of its range, it will return undefined
+    able to delete element using delete keyword; it leaves that element index empty
+    to delete and remove the empty element, use Array::splice(int, int)
+
+    spread operator:
+        the operator: ...
+        spread iterable object (like an array)
+
+        [[ similar to asterisk (*) in python3 ]]
+
+    [[ in a nutshell, an array is similar to list in python ]]
+
+
+destructuring:
+    [[ similar to structured binding in cpp; but different ]]
+
+    object:
+        using {}
+        variable inside {} must the key of objects to retrieve the values
+            else, the returned value will be undefined (default value)
+        destructuring to different local variable is possible
+            let {key1: localvar1, key2: localvar2} = object
+
+    array:
+        using []
+        similar as above
+
+
+map:
+    key with any data type
+    use constructor Map()
+    
+
+set:
+    set of values that is unique
+    can't be indexed
+    unordered
+    use constructor Set()
+
+
+weakmap:
+    variant of map with garbage collection
+    weak means reference to object
+    key must be object or array (primitives can't be used because no garbage collection)
+    get() set() has() delete()      exist
+    keys() values() forEach()       not exist
+    no size property
+
+    [[ basically, weakmap only store reference of an object, if the object goes out of scope, the reference vanish ]]
+
+
+weakset:
+    variant of set with garbage collection
+    not so different as above
+    add() has() delete()            exist
+    size                            not exist

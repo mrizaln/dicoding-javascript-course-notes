@@ -1,0 +1,42 @@
+comment:    1-line    :  //
+            multi-line:  /* and */
+
+variable declaration:
+    var     function scope      -           unrecommended use
+    let     block scope         mutable
+    const   block scope         immutable   
+
+data types: 
+    undefined       uninitialized variable
+    numbers         floating point      -2^53 to 2^53-1
+    BigInt          integral            add 'n' character at end of number to defferentiate numbers with bigint
+    string          string              use ' or " (no difference)
+                    string interpolation using `; like f-string in python3.10 but using ${var_name}
+    boolean         boolean
+                            falsy       0
+                                        0n
+                                        "" '' (empty string)
+                                        null
+                                        undefined
+                                        NaN
+                            truthy      [[except above]]
+    null            something like nullptr (C/C++) or None (python3)
+    symbol          new (ES6)
+                    used to show as unique identifier
+
+type conversion:
+    javascript ALWAYS implicitly converts type
+
+operators:
+    = += -= *= /= %=            assignment
+    > < >= <= == != === !==     comparison (== compare value (remember the automatic type conversion), === compare object (data type))
+    && || !                     logical
+    & | ^ ~ << >> >>>           bitwise operator (>> vs >>>: ...) [bitwise done in 32 bit]
+
+control flow:
+    if-else         branch              [[ same as in C ]]
+    switch case     branch (simple)     [[ same as in C ]]
+    for             loop                [[ same as in C ]]
+    for of          loop                similar to ```for (auto& i : array_like_container)```
+    while           loop                [[ same as in C ]]
+    do-while        loop                [[ same as in C ]]

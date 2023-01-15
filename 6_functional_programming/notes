@@ -1,0 +1,29 @@
+pure function:
+    does not depends on value outside the function
+    no side effects
+
+
+immutability:
+    FP (functional programming) emphasize on the concept of immutability
+
+
+recursive:
+    FP also emphasize on recursive
+
+
+higher-order function:
+    a function that can receive other function as its arguments, returns a function, or both
+    JS has first-class function ability, thus able to do above
+
+
+reusable function:
+    function that is reusable because it is a pure function
+
+        Array.map()
+        Array.filter()
+        Array.reduce()  
+        Array.every()
+        Array.some()
+        Array.find()
+        Array.sort()
+        Array.forEach()

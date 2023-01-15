@@ -1,0 +1,30 @@
+class:
+    a blueprint
+    two ways: - function syntax
+                    has something like prototype: don't copy attribute to every instantiated object
+              - class syntax
+    class has a dynamic property (like python; property can be added or removed after definition)
+    private variable is prefixed with an underscore (_) (just a convention)
+                                      a  hash sign  (#) (not supported on older engine)
+    static method is prefixed with [static] keyword
+
+
+inheritance:
+    use [extends] keyword
+    ``` class ChildClass extends ParentClass{}; ```
+
+    use [super(...params)] to call parent constructor
+
+
+overriding:
+    yeah, like overriding a member function in C++
+
+    use [super.overriddenFunction(...)] to call overriddenFunction of Parent class from Child class
+
+
+object composition:
+    idk
+
+
+built-in class:
+    Date, Object, Array, Math, String
